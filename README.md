@@ -1,1 +1,1 @@
-# TechStock-Cadastro- Tela de login e cadastro.
+# TechStock-Cadastro- Tela de login e cadastro de usuário.
