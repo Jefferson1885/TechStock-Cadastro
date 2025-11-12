@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: #7e8292; */
+  background: linear-gradient(#d3c6bb, rgba(23, 132, 139, 0.911));
+}
+
+/* Container geral */
+.main-container {
+  display: flex;
+  width: 900px;
+  height: 520px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Painel esquerdo */
+.left-panel {
+  flex: 1;
+  background: url("loginiu.jpg") center/cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(23, 132, 139, 0.911);
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 30px;
+}
+
+.overlay h1 {
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.overlay p {
+  font-size: 14px;
+  color: #ddd;
+  max-width: 90%;
+}
+
+/* Painel direito */
+.right-panel {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.form-box {
+  width: 80%;
+  max-width: 320px;
+  text-align: center;
+}
+
+/* Botões Signin / Signup */
+.buttonsForm {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.buttonsForm button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.buttonsForm button:hover {
+  color: #007bff;
+}
+
+.btnColor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background: rgba(23, 132, 139, 0.911);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Formulários */
+form {
+  display: none;
+  flex-direction: column;
+  transition: opacity 0.3s ease;
+}
+
+form.active {
+  display: flex;
+  opacity: 1;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: rgba(23, 132, 139, 0.911);
+}
+
+button[type="submit"] {
+  background: rgb(23, 131, 139);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0a0a0a;
+}
+
+.divCheck {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 15px;
+}

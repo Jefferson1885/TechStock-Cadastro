@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStock - Cadastro</title>
+  <link rel="stylesheet" href="index_style.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Painel Esquerdo -->
+    <div class="left-panel">
+      <div class="overlay">
+        <img src="/img/LOGOTECH.png" alt="TechStock" class="logo">
+        <h1>Seja bem-vindo(a)<br>ao TechStock!</h1>
+        <p>Tecnologia que impressiona, preços que conquistam.<br>
+        Sua evolução digital começa aqui.</p>
+      </div>
+    </div>
+
+    <!-- Painel Direito -->
+    <div class="right-panel">
+      <div class="form-box">
+        <div class="buttonsForm">
+          <div class="btnColor"></div>
+          <button id="btnSignin">Login</button>
+          <button id="btnSignup">Cadastro</button>
+        </div>
+
+        <form id="signin" class="active">
+          <input type="text" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <!-- <div class="divCheck">
+            <input type="checkbox" />
+            <span>Remember Password</span>
+          </div> -->
+          <button type="submit">Login</button>
+        </form>
+
+        <form id="signup">
+            <input type="text" name="nomecompleto" placeholder="Nome Completo" required />
+            <input type="text" name="email" placeholder="Email" required />
+            <input type="password" name="senha" placeholder="Password" required />
+            <input type="password" name="confirmarsenha" placeholder="Confirm Password" required />
+            <!-- <div class="divCheck">
+            <input type="checkbox" required />
+            <span>Accept Terms</span>
+            </div> -->
+            <button type="submit">Cadastro</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="index_script.js"></script>
+</body>
+</html>
